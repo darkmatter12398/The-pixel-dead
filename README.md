@@ -35,6 +35,7 @@ To fire the gun, the player has to hold down left mouse click, and it will fire 
 ![image](https://user-images.githubusercontent.com/77501024/211990859-1ccb07bb-aaac-4bc2-9f47-4999aaa92881.png)
 
 If you're crosshair is aiming at a zombie, it will damage the zombie as long as you have ammo, and are holding down left click.
+
 Note: You can't fire at the path of the zombie; the crosshair has to be at the zombie's location for it to damage the zombie
 
 ![image](https://user-images.githubusercontent.com/77501024/211990899-470526bf-da4c-41d2-9841-07cf471edcce.png)
