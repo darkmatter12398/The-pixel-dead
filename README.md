@@ -1,5 +1,5 @@
 # Description
-The pixel dead is a round-based top-down 2D shooter, where you fight off hordes of zombies in a confined area. The player is equipped with an assault rifle, and has to infinitely fight off zombies
+"The pixel dead" is a round-based top-down 2D shooter, where you fight off hordes of zombies in a confined area. The player is equipped with an assault rifle, and has to infinitely fight off zombies
 
 # How to use
 1. Install [python](https://www.python.org/)
