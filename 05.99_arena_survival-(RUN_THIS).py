@@ -27,49 +27,49 @@ screen = pygame.display.set_mode((1100,800))
 # Title and icon setup
 pygame.display.set_caption("Arena Survival - Rafat and Shaheed")
 
-icon = pygame.image.load('pixelGun.png')
+icon = pygame.image.load('images/pixelGun.png')
 pygame.display.set_icon(icon)
 
 # Load in background image
 # Transform the background image and scale it to fit the size of the window
-backgroundImg = pygame.image.load('grass_better.png')
+backgroundImg = pygame.image.load('images/grass_better.png')
 backgroundImg = pygame.transform.scale(backgroundImg, (800, 800))
 backgroundX = 0
 backgroundY = 0
 
 # Load in crosshair image (for shooting and aiming)
-crosshairImg = pygame.image.load('Crosshair.png')
+crosshairImg = pygame.image.load('images/Crosshair.png')
 
 # Load in title screen + tutorial images image and scale it to fit the size of the window
-titleImg = pygame.image.load('Game_Title.png')
+titleImg = pygame.image.load('images/Game_Title.png')
 titleImg = pygame.transform.scale(titleImg, (1100, 800))
 
 # Load in empty image
 # Essentially, the purpose of this image is to make images that are supposed to be disappear, disappear.
 # Especially zombies
-emptyImg = pygame.image.load('empty.png')
+emptyImg = pygame.image.load('images/empty.png')
 
 # Loads in all heart images
 # They are seperate variables, since they are deleted at certain times
 # They are also scaled to fit their respective places on the UI panel
-heart_left_1 = pygame.image.load('heart_left.png')
+heart_left_1 = pygame.image.load('images/heart_left.png')
 heart_left_1 = pygame.transform.scale(heart_left_1, (128, 128))
-heart_right_1 = pygame.image.load('heart_right.png')
+heart_right_1 = pygame.image.load('images/heart_right.png')
 heart_right_1 = pygame.transform.scale(heart_right_1, (128, 128))
 
-heart_left_2 = pygame.image.load('heart_left.png')
+heart_left_2 = pygame.image.load('images/heart_left.png')
 heart_left_2 = pygame.transform.scale(heart_left_2, (128, 128))
-heart_right_2 = pygame.image.load('heart_right.png')
+heart_right_2 = pygame.image.load('images/heart_right.png')
 heart_right_2 = pygame.transform.scale(heart_right_2, (128, 128))
 
-heart_left_3 = pygame.image.load('heart_left.png')
+heart_left_3 = pygame.image.load('images/heart_left.png')
 heart_left_3 = pygame.transform.scale(heart_left_3, (128, 128))
-heart_right_3 = pygame.image.load('heart_right.png')
+heart_right_3 = pygame.image.load('images/heart_right.png')
 heart_right_3 = pygame.transform.scale(heart_right_3, (128, 128))
 
 # Loads in panel image, and scales it up to screen size
 # This displays the players statistics (e.g. their health)
-panelImg = pygame.image.load('Panel.png')
+panelImg = pygame.image.load('images/Panel.png')
 panelImg = pygame.transform.scale(panelImg, (300, 800))
 
 panelX = 800
@@ -84,8 +84,8 @@ bloodY = []
 # This is the player your play as.
 # We initialize changes that might be needed for the x and y value
 # Fire rate is the players speed at which they unload bullets
-playerImg = pygame.image.load('muscle_guy_AR.png')
-player_flash = pygame.image.load('muscle_guy_AR_flash.png')
+playerImg = pygame.image.load('images/muscle_guy_AR.png')
+player_flash = pygame.image.load('images/muscle_guy_AR_flash.png')
 playerX_change = 0
 playerY_change = 0
 fire_rate = 5
@@ -122,29 +122,29 @@ def initialize():
     # Load in empty image
     # Essentially, the purpose of this image is to make images that are supposed to be disappear, disappear.
     # Especially zombies
-    emptyImg = pygame.image.load('empty.png')
+    emptyImg = pygame.image.load('images/empty.png')
 
     # Loads in all heart images
     # They are seperate variables, since they are deleted at certain times
     # They are also scaled to fit their respective places on the UI panel
-    heart_left_1 = pygame.image.load('heart_left.png')
+    heart_left_1 = pygame.image.load('images/heart_left.png')
     heart_left_1 = pygame.transform.scale(heart_left_1, (128, 128))
-    heart_right_1 = pygame.image.load('heart_right.png')
+    heart_right_1 = pygame.image.load('images/heart_right.png')
     heart_right_1 = pygame.transform.scale(heart_right_1, (128, 128))
 
-    heart_left_2 = pygame.image.load('heart_left.png')
+    heart_left_2 = pygame.image.load('images/heart_left.png')
     heart_left_2 = pygame.transform.scale(heart_left_2, (128, 128))
-    heart_right_2 = pygame.image.load('heart_right.png')
+    heart_right_2 = pygame.image.load('images/heart_right.png')
     heart_right_2 = pygame.transform.scale(heart_right_2, (128, 128))
 
-    heart_left_3 = pygame.image.load('heart_left.png')
+    heart_left_3 = pygame.image.load('images/heart_left.png')
     heart_left_3 = pygame.transform.scale(heart_left_3, (128, 128))
-    heart_right_3 = pygame.image.load('heart_right.png')
+    heart_right_3 = pygame.image.load('images/heart_right.png')
     heart_right_3 = pygame.transform.scale(heart_right_3, (128, 128))
 
     # Loads in panel image, and scales it up to screen size
     # This displays the players statistics (e.g. their health)
-    panelImg = pygame.image.load('Panel.png')
+    panelImg = pygame.image.load('images/Panel.png')
     panelImg = pygame.transform.scale(panelImg, (300, 800))
 
     panelX = 800
@@ -159,8 +159,8 @@ def initialize():
     # This is the player your play as.
     # We initialize changes that might be needed for the x and y value
     # Fire rate is the players speed at which they unload bullets
-    playerImg = pygame.image.load('muscle_guy_AR.png')
-    player_flash = pygame.image.load('muscle_guy_AR_flash.png')
+    playerImg = pygame.image.load('images/muscle_guy_AR.png')
+    player_flash = pygame.image.load('images/muscle_guy_AR_flash.png')
     playerX_change = 0
     playerY_change = 0
     fire_rate = 5
@@ -475,29 +475,29 @@ def initialize():
                     # Load in empty image
                     # Essentially, the purpose of this image is to make images that are supposed to be disappear, disappear.
                     # Especially zombies
-                    emptyImg = pygame.image.load('empty.png')
+                    emptyImg = pygame.image.load('images/empty.png')
 
                     # Loads in all heart images
                     # They are seperate variables, since they are deleted at certain times
                     # They are also scaled to fit their respective places on the UI panel
-                    heart_left_1 = pygame.image.load('heart_left.png')
+                    heart_left_1 = pygame.image.load('images/heart_left.png')
                     heart_left_1 = pygame.transform.scale(heart_left_1, (128, 128))
-                    heart_right_1 = pygame.image.load('heart_right.png')
+                    heart_right_1 = pygame.image.load('images/heart_right.png')
                     heart_right_1 = pygame.transform.scale(heart_right_1, (128, 128))
 
-                    heart_left_2 = pygame.image.load('heart_left.png')
+                    heart_left_2 = pygame.image.load('images/heart_left.png')
                     heart_left_2 = pygame.transform.scale(heart_left_2, (128, 128))
-                    heart_right_2 = pygame.image.load('heart_right.png')
+                    heart_right_2 = pygame.image.load('images/heart_right.png')
                     heart_right_2 = pygame.transform.scale(heart_right_2, (128, 128))
 
-                    heart_left_3 = pygame.image.load('heart_left.png')
+                    heart_left_3 = pygame.image.load('images/heart_left.png')
                     heart_left_3 = pygame.transform.scale(heart_left_3, (128, 128))
-                    heart_right_3 = pygame.image.load('heart_right.png')
+                    heart_right_3 = pygame.image.load('images/heart_right.png')
                     heart_right_3 = pygame.transform.scale(heart_right_3, (128, 128))
 
                     # Loads in panel image, and scales it up to screen size
                     # This displays the players statistics (e.g. their health)
-                    panelImg = pygame.image.load('Panel.png')
+                    panelImg = pygame.image.load('images/Panel.png')
                     panelImg = pygame.transform.scale(panelImg, (300, 800))
 
                     panelX = 800
@@ -512,8 +512,8 @@ def initialize():
                     # This is the player your play as.
                     # We initialize changes that might be needed for the x and y value
                     # Fire rate is the players speed at which they unload bullets
-                    playerImg = pygame.image.load('muscle_guy_AR.png')
-                    player_flash = pygame.image.load('muscle_guy_AR_flash.png')
+                    playerImg = pygame.image.load('images/muscle_guy_AR.png')
+                    player_flash = pygame.image.load('images/muscle_guy_AR_flash.png')
                     playerX_change = 0
                     playerY_change = 0
 
@@ -644,7 +644,7 @@ def initialize():
                 # Ammo
                 if timer % 525 == 0:
                     
-                    ammoImg.append(pygame.image.load('Ammo.png'))
+                    ammoImg.append(pygame.image.load('images/Ammo.png'))
                     ammoX.append(random.randrange(32, 735))
                     ammoY.append(random.randrange(32, 735))
 
@@ -806,14 +806,14 @@ def initialize():
                 # If a certain amount of time passes, we will append various array that involve zombies
                 if spawn_timer % zombie_spwn_time == 0 and spawn_timer != 0:
 
-                    enemyImg.append(pygame.image.load('zombie_model.png'))
+                    enemyImg.append(pygame.image.load('images/zombie_model.png'))
                     enemyX.append(random.randrange(32, 735))
                     enemyY.append(random.randrange(32, 735))
                     enemy_speed.append(1)
                     enemy_health = enemy_evolution(total_zombies, enemy_health)
                     zombie_health.append(enemy_health)
                     placed.append(False)
-                    blood.append(pygame.image.load('blood.png'))
+                    blood.append(pygame.image.load('images/blood.png'))
                     blood_timer.append(0)
                     bloodX.append(0)
                     bloodY.append(0)
